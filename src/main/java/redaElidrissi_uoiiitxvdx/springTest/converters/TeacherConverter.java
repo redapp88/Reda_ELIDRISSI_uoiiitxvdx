@@ -13,7 +13,7 @@ public class TeacherConverter {
 	public static TeacherVo toVo(Teacher bo) {
 		TeacherVo vo = new TeacherVo();
 		vo.setId(bo.getId());
-		vo.setFirsName(bo.getFirsName());
+		vo.setFirsName(bo.getFirstName());
 		vo.setLastName(bo.getLastName());
 		vo.setRole(AppRoleConverter.toVo(bo.getRole()));
 		return vo;
@@ -22,7 +22,7 @@ public class TeacherConverter {
 	public static Teacher toBo(TeacherVo vo) {
 		Teacher bo = new Teacher();
 		bo.setId(vo.getId());
-		bo.setFirsName(vo.getFirsName());
+		bo.setFirstName(vo.getFirsName());
 		bo.setLastName(vo.getLastName());
 		bo.setRole(AppRoleConverter.toBo(vo.getRole()));
 		return bo;

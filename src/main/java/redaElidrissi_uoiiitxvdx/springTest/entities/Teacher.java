@@ -16,4 +16,10 @@ public class Teacher extends AppUser {
 	@OneToMany(mappedBy = "teacher")
 	private List<AppClass> appClasses ;
 
+	public Teacher(Long id, String firstName, String lastName, AppRole role, List<AppClass> list) {
+		super(id, firstName, lastName, role);
+		this.appClasses = list;
+	}
+	
+
 }
