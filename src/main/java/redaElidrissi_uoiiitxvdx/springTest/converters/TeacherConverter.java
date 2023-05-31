@@ -15,7 +15,6 @@ public class TeacherConverter {
 		vo.setId(bo.getId());
 		vo.setFirsName(bo.getFirstName());
 		vo.setLastName(bo.getLastName());
-		vo.setRole(AppRoleConverter.toVo(bo.getRole()));
 		return vo;
 	}
 
@@ -24,7 +23,6 @@ public class TeacherConverter {
 		bo.setId(vo.getId());
 		bo.setFirstName(vo.getFirsName());
 		bo.setLastName(vo.getLastName());
-		bo.setRole(AppRoleConverter.toBo(vo.getRole()));
 		return bo;
 	}
 

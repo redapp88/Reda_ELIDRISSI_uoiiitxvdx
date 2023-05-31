@@ -1,9 +1,10 @@
 package redaElidrissi_uoiiitxvdx.springTest.entities;
 
+import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.ManyToOne;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -17,8 +18,8 @@ public class Student extends AppUser {
 	@JsonIgnore
 	private AppClass appClass;
 
-	public Student(Long id, String firstName, String lastName, AppRole role, AppClass appClass) {
-		super(id, firstName, lastName, role);
+	public Student(Long id, String firstName, String lastName, AppClass appClass) {
+		super(id, firstName, lastName);
 		this.appClass = appClass;
 	}
 	
