@@ -10,7 +10,7 @@ Package domaine: les classes VO (value objects)
 Package converters: Les convertisseurs VO en BO et vice-versa  
 Package services: les classes metiers implementant la logique fonctionelle  
 Package web : les Controlleurs Rest de l'API  
-# guide des testes fonctionelles
+# guide des tests fonctionels
 Une authentification est necessaire pour pouvoir interagir avec l'api  
 http://localhost:5000/login  
 username=admin  
